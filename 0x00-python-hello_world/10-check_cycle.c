@@ -9,27 +9,23 @@
  */
 int check_cycle(listint_t *list)
 {
+	listint_t *new;
 	listint_t *current;
-	listint_t *current1;
-	unsigned int n, m;
+	unsigned int n;
 
-	current = list;
-	current1 = list->next;
 	n = 0;
-	m = 0;
-	list = NULL;
+	if (list == NULL)
+		return (0);
+	printf("first n:%i\n", list->n);
+	current = list;
+	list->next = NULL;
 	while (current != NULL)
 	{
 		current = current->next;
-		n++;
 	}
-	while (current1 != NULL)
-	{
-		current1 = current1->next;
-		m++;
-	}
-	if (n != m)
-		return (0);
-	else
+	printf("last n:%i\n", current->n);
+	if (current->n == list->n)
 		return (1);
+	else
+		return (0);
 }

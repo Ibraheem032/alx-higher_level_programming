@@ -11,22 +11,25 @@ int check_cycle(listint_t *list)
 {
 	listint_t *current;
 	listint_t *current1;
+	unsigned int n, m;
 
 	current = list;
+	current1 = list->next;
+	n = 0;
+	m = 0;
+	list = NULL;
 	while (current != NULL)
 	{
 		current = current->next;
 		n++;
 	}
-	current1 = list;
-	list = NULL;
 	while (current1 != NULL)
 	{
 		current1 = current1->next;
 		m++;
 	}
-	if (n == m)
-		return (1);
-	else
+	if (n != m)
 		return (0);
+	else
+		return (1);
 }

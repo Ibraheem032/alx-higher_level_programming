@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+def main():
+    pass
 import sys
 from calculator_1 import add, sub, mul, div
 operator = ['+', '-', '*', '/']
@@ -27,7 +29,7 @@ else:
                 print("{:d} + {:d} = {:d}".format(a, b, int(div(a, b))))
             flag = 0
 if __name__ == "__main__":
-    pass
+    main()
 if flag == 0:
     sys.exit(0)
 else:

@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import sys
 from calculator_1 import add, sub, mul, div
-if __name__ == "__main__":
-    pass
 operator = ['+', '-', '*', '/']
 if len(sys.argv) != 4:
     print("Usage: ./100-my_calculator.py {} operator {}".format('<a>', '<b>'))
+    if __name__ == "__main__":
+        pass
     sys.exit(1)
 else:
     a = int(sys.argv[1])
@@ -18,6 +18,8 @@ else:
             continue
         elif j != x and x == '/': 
             print("Unknown operator. Available operators: +, -, *, and /")
+            if __name__ == "__main__":
+                pass
             sys.exit(1)
     if j == '+':
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
@@ -26,5 +28,7 @@ else:
     elif j == '*':
         print("{:d} + {:d} = {:d}".format(a, b, mul(a, b)))
     else:
-        print("{:d} + {:d} = {:.2f}".format(a, b, div(a, b)))
+        print("{:d} + {:d} = {:d}".format(a, b, int(div(a, b))))
+    if __name__ == "__main__":
+        pass
     sys.exit(0)

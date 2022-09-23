@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import sys
 from calculator_1 import add, sub, mul, div
+if __name__ == "__main__":
+    pass
 operator = ['+', '-', '*', '/']
 if len(sys.argv) != 4:
     print("Usage: ./100-my_calculator.py {} operator {}".format('<a>', '<b>'))
@@ -25,6 +27,4 @@ else:
         print("{:d} + {:d} = {:d}".format(a, b, mul(a, b)))
     else:
         print("{:d} + {:d} = {:.2f}".format(a, b, div(a, b)))
-if __name__ == "__main__":
-    pass
-sys.exit(0)
+    sys.exit(0)

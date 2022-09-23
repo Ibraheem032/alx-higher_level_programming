@@ -25,4 +25,6 @@ else:
         print("{:d} + {:d} = {:d}".format(a, b, mul(a, b)))
     else:
         print("{:d} + {:d} = {:.2f}".format(a, b, div(a, b)))
-    sys.exit(0)
+if __name__ == "__main__":
+    pass
+sys.exit(0)

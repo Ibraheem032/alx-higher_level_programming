@@ -9,16 +9,13 @@ def add_tuple(tuple_a=(), tuple_b=()):
         dif = len1 - len2
         for i in range(0, dif):
             b.append(0)
-        print(a,b)
         for j in range(0, len1):
             ret.append(a[j] + b[j])
     elif len2 > len1:
         dif = len2 - len1
         for i in range(0 ,dif):
             a.append(0)
-        print(a,b)
         for j in range(0, len2):
-            print(a[j], b[j])
             ret.append(a[j] + b[j])
     else:
         for i in range(0, len(tuple_a)):

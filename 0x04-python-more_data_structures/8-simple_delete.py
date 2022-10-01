@@ -5,5 +5,5 @@ def simple_delete(a_dictionary, key=""):
 		#if i == key:
         new_dict = a_dictionary.pop(key)
         return (new_dict)
-	else:
-	    return (a_dictionary)
+    else:
+        return (a_dictionary)

@@ -1,2 +1,0 @@
-
-Doubly Linked list

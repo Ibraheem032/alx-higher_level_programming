@@ -3,7 +3,6 @@ def safe_print_division(a, b):
     try:
         res = a / b
     except (ValueError, TypeError, ArithmeticError):
-        pass
         f_res = "None"
         return (None)
     else:

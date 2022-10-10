@@ -15,7 +15,7 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             break
     try:
-        new_len = len(new_list)
+        list_length = len(new_list)
     except ValueError:
         pass
     finally:

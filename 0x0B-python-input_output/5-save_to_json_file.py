@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """This module contains the function "save_to_json_string".
 """
+
+
 def save_to_json_file(my_obj, filename):
     """
     This function writes an Object to a text file.

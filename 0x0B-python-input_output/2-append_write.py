@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """This module contains the function append_write().
 """
-def append_write(filename="", text= ""):
+
+
+def append_write(filename="", text=""):
     """
     The function append a string to end of a txt file,
     and returns the number of characters appended.

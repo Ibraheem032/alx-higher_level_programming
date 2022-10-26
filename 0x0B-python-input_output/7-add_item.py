@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """Adds all argument to a list and save it as a JSON file.
 """
-import sys, json
+import sys
+import json
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 my_list = []

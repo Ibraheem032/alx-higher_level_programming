@@ -9,10 +9,14 @@ def append_after(filename="", search_string="", new_string=""):
     after each line containin a specific string
     """
     import json
-    nb = 0
-    with open(filename, 'r+') as f:
-        x = f.readlines()
-        if search_string in x[-1]:
-            x.append(new_string)
-        f.seek(0)
-        f.writelines(x)
+    y = ''
+    with open(filename, 'r') as f:
+        x = f.readline()
+        while x:
+            if search_string in x:
+                y = y + x + new_string
+            else:
+                y = y + x
+            x = f.readline() 
+    with open(filename, 'w') as f:
+        f.write(y)
